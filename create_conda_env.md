@@ -97,3 +97,30 @@ $ bash Miniconda3-latest-MacOSX-x86_64.sh
 ## Creating an exisiting virtual environment
 1. If you have not, activate `conda` in Miniconda first using `conda activate`.
 2. Run the following command
+```
+$ conda env create -f https://raw.githubusercontent.com/franzihe/GEO4902/main/environment_geo4902.yml
+
+```
+3. Make sue you see "geo4902" in the output when you ask for a list of all available environments:
+```
+$ conda env list
+```
+
+## Activate the `geo4902` envrionment
+```
+$ conda activate geo4902
+```
+## Deactivate the `geo4902` envrionment
+```
+$ conda deactivate
+
+```
+## Adding new packages 
+```
+$ conda install NEW_PACKAGE
+```
+
+## Remove the `geo4902` envrionment
+```
+$ conda remove --name geo4902 --all
+```
