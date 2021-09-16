@@ -4,6 +4,8 @@
 ## Download Miniconda 
 We will use Miniconda as it is a smaller version of Anaconda. You will have the same advantages as with Anaconda. It comes with a complete Python distribution and lets you create isolated _environments_ that don't affect anything else. 
 
+You can follow the steps as here described by the [CodeRefinery](https://coderefinery.github.io/installation/conda/).
+
 1. Open your terminal (e.g within VS Code)
 2. Download the most recent version of Miniconda installer 
    - [for Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
@@ -48,7 +50,7 @@ $ bash Miniconda3-latest-MacOSX-x86_64.sh
 
 
 ## Creating an exisiting virtual environment
-The following steps are taken from eht CodeRefinerey workshop software [installation instructions](https://coderefinery.github.io/installation/#).
+The following steps are taken from the CodeRefinerey workshop software [installation instructions](https://coderefinery.github.io/installation/#), specifically [creating a conda envrionment for CodeRefinerey workshops](https://coderefinery.github.io/installation/conda-environment/#conda-environment).
 
 1. If you have not, activate `conda` in Miniconda first using `conda activate`.
 2. Run the following command
