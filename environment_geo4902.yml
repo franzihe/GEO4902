@@ -122,4 +122,4 @@ dependencies:
     - cftime==1.5.0
     - netcdf4==1.5.7
     - numpy==1.21.2
-prefix: /home/franzihe/anaconda3/envs/geo4902
+
