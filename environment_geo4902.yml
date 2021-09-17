@@ -80,4 +80,3 @@ dependencies:
   - xarray=0.11.3=py27_0
   - zeromq=4.3.4=h2531618_0
   - zlib=1.2.11=h7b6447c_3
-prefix: /home/franzihe/anaconda3/envs/geo4902
