@@ -1,4 +1,4 @@
-name: geo4902_2
+name: geo4902
 channels:
   - conda-forge
   - defaults
@@ -273,4 +273,3 @@ dependencies:
   - zict=2.2.0=pyhd8ed1ab_0
   - zipp=3.8.1=pyhd8ed1ab_0
   - zstd=1.5.2=h6239696_4
-prefix: /home/franzihe/anaconda3/envs/geo4902_2
