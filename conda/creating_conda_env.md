@@ -55,10 +55,12 @@ The following steps are taken from the CodeRefinerey workshop software [installa
 1. If you have not, activate `conda` in Miniconda first using `conda activate`.
 2. Run the following command
 ```
-$ conda env create -f https://raw.githubusercontent.com/franzihe/GEO4902/main/environment_geo4902.yml
+$ conda env create -f environment_geo4902.yml
 
 ```
-3. Make sue you see "geo4902" in the output when you ask for a list of all available environments:
+> **_NOTE:_** You need to have downloaded the [environment file](./environment_geo4902.yml) located in the GEO4902/conda directory or create your own conda environment with the package listed in the [environment file](./environment_geo4902.yml). (Package versions can be found at the end of the document.)
+> 
+1. Make sure you see "geo4902" in the output when you ask for a list of all available environments:
 ```
 $ conda env list
 ```
@@ -80,4 +82,74 @@ $ conda install NEW_PACKAGE
 ## Remove the `geo4902` envrionment
 ```
 $ conda remove --name geo4902 --all
+```
+
+## Package versions currently used
+In GEO4902, we currently use the following packages as listed in the [environment file](./environment_geo4902.yml) with versions:
+
+
+<p style="background:black">
+<code style="background:black;color:white"> >> python: version 3.10.6 <br>
+>> nc_time_axis: version 1.4.1 <br>
+>> zarr: version 2.12.0 <br>
+>> xarray: version 2022.6.0 <br>
+>> matplotlib: version 3.5.3 <br>
+>> cftime: version 1.6.1 <br>
+>> dask: version 2022.9.0 <br>
+>> cmcrameri: version 1.4 <br>
+>> scipy: version 1.9.1 <br>
+>> intake: version 0.6.6 <br>
+>> seaborn: version 0.12.0 <br>
+>> xesmf: version 0.3.0 <br>
+>> cartopy: version 0.21.0 <br>
+>> Selected Jupyter core packages... <br>
+>> IPython          : 8.5.0 <br>
+>> ipykernel        : 6.15.2 <br>
+>> ipywidgets       : 8.0.2 <br>
+>> jupyter_client   : 7.0.6 <br>
+>> jupyter_core     : 4.11.1 <br>
+>> jupyter_server   : not installed <br>
+>> jupyterlab       : not installed <br>
+>> nbclient         : 0.6.8 <br>
+>> nbconvert        : 7.0.0 <br>
+>> nbformat         : 5.4.0 <br>
+>> notebook         : 6.4.12 <br>
+>> qtconsole        : 5.3.2 <br>
+>> traitlets        : 5.3.0 <br>
+</code>
+</p>
+
+
+To check which versions you have installed run the following in a Jupyter notebook.
+```
+from platform import python_version
+import nc_time_axis
+import zarr 
+import xarray as xr
+import matplotlib as mpl
+import cftime
+import dask as da
+import cmcrameri as cm
+import scipy
+import intake
+import seaborn
+import xesmf
+import cartopy as crs
+
+print('python: version {}'.format(python_version()))
+print('nc_time_axis: version {}'.format(nc_time_axis.__version__))
+print('zarr: version {}'.format(zarr.__version__))
+print('xarray: version {}'.format(xr.__version__))
+print('matplotlib: version {}'.format(mpl.__version__))
+print('cftime: version {}'.format(cftime.__version__))
+print('dask: version {}'.format(da.__version__))
+print('cmcrameri: version {}'.format(cm.__version__))
+print('scipy: version {}'.format(scipy.__version__))
+print('intake: version {}'.format(intake.__version__))
+print('seaborn: version {}'.format(seaborn.__version__))
+print('xesmf: version {}'.format(xesmf.__version__))
+print('cartopy: version {}'.format(crs.__version__))
+
+!jupyter --version
+
 ```
