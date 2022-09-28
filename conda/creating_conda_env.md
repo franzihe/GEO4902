@@ -87,37 +87,35 @@ $ conda remove --name geo4902 --all
 ## Package versions currently used
 In GEO4902, we currently use the following packages as listed in the [environment file](./environment_geo4902.yml) with versions:
 
-
-<p style="background:black">
-<code style="background:black;color:white"> >> python: version 3.10.6 <br>
->> nc_time_axis: version 1.4.1 <br>
->> zarr: version 2.12.0 <br>
->> xarray: version 2022.6.0 <br>
->> matplotlib: version 3.5.3 <br>
->> cftime: version 1.6.1 <br>
->> dask: version 2022.9.0 <br>
->> cmcrameri: version 1.4 <br>
->> scipy: version 1.9.1 <br>
->> intake: version 0.6.6 <br>
->> seaborn: version 0.12.0 <br>
->> xesmf: version 0.3.0 <br>
->> cartopy: version 0.21.0 <br>
->> Selected Jupyter core packages... <br>
->> IPython          : 8.5.0 <br>
->> ipykernel        : 6.15.2 <br>
->> ipywidgets       : 8.0.2 <br>
->> jupyter_client   : 7.0.6 <br>
->> jupyter_core     : 4.11.1 <br>
->> jupyter_server   : not installed <br>
->> jupyterlab       : not installed <br>
->> nbclient         : 0.6.8 <br>
->> nbconvert        : 7.0.0 <br>
->> nbformat         : 5.4.0 <br>
->> notebook         : 6.4.12 <br>
->> qtconsole        : 5.3.2 <br>
->> traitlets        : 5.3.0 <br>
-</code>
-</p>
+```
+>> python:        version 3.10.6 
+>> nc_time_axis:  version 1.4.1 
+>> zarr:          version 2.12.0 
+>> xarray:        version 2022.6.0 
+>> matplotlib:    version 3.5.3 
+>> cftime:        version 1.6.1 
+>> dask:          version 2022.9.0 
+>> cmcrameri:     version 1.4 
+>> scipy:         version 1.9.1 
+>> intake:        version 0.6.6 
+>> seaborn:       version 0.12.0 
+>> xesmf:         version 0.3.0 
+>> cartopy:       version 0.21.0 
+>> Selected Jupyter core packages... 
+>> IPython          : 8.5.0 
+>> ipykernel        : 6.15.2 
+>> ipywidgets       : 8.0.2 
+>> jupyter_client   : 7.0.6 
+>> jupyter_core     : 4.11.1 
+>> jupyter_server   : not installed 
+>> jupyterlab       : not installed 
+>> nbclient         : 0.6.8 
+>> nbconvert        : 7.0.0 
+>> nbformat         : 5.4.0 
+>> notebook         : 6.4.12 
+>> qtconsole        : 5.3.2 
+>> traitlets        : 5.3.0 
+```
 
 
 To check which versions you have installed run the following in a Jupyter notebook.
